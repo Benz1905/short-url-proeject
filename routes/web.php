@@ -15,8 +15,10 @@
 //    return view('welcome');
 //});
 
-Route::get('/new','NewPageController@new');
+Route::get('/new','NewPageController@create');
 Route::get('/','NewPageController@index');
 Route::get('/show/{id}','NewPageController@show');
 
-Route::post('/','NewPageController@store');
+
+Route::post('/save','NewPageController@store');
+

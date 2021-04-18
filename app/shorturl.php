@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class shorturl extends Model
 {
     //
+    protected $guarded =[];
 }
